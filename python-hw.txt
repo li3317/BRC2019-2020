@@ -1,0 +1,28 @@
+1) Write a Python program to print the following string in the specific format below (without the italics)
+I'm really goo d as singing. Then I said,
+"La dee da dee da
+    doo dee doo dee da
+        bla dee bla dee bla           
+laa dee da dee da"
+Wasn't that awesome? What's my name?
+Oh it's "\newman" and yes, I know it has a backslash in it.
+
+2) Write a Python function to create and print a list where the values are square of numbers between 1 and 30 (both included).
+
+3) Write a Python program to sum all the items in a list.
+
+4) Write a Python program which accepts a sequence of comma-separated numbers from the user and generate a list and a tuple with those numbers.
+
+5) Write a Python program to add 'ing' at the end of a given string (length should be at least 3). If the given string is already ends with 'ing' then add 'ly' instead. If the string length of the given string is less than 3, leave it unchanged.
+Sample String : 'abc'
+Expected Result : 'abcing'
+Sample String : 'string'
+Expected Result : 'stringly'
+
+6) Write a Python program that accepts a sentence input from the user, counts the occurrences of each word in a given sentence, and returns the results in a dictionary format.
+Sample Input: t he quick brown fox jumps over the lazy dog.
+Expected Result (keywords may be in a different order): {'the': 2, 'jumps': 1, 'brown': 1, 'lazy': 1, 'fox': 1, 'over': 1, 'quick': 1, 'dog.': 1}
+
+7) Create a function that calculates the area of a 2 circles. The first circle should have the radius equal to the current month number (9) and the second circle should have a radius equal to the minute number (eg. at 3:51, the radius of the circle would be 51). You can't approximate pi or copy and paste the value into your code.
+Hint: Use the datetime and math modules from the standard library.
+Hint 2: Google is your friend! Use it to help you learn what the datetime and math modules are and what functions you need to use.
