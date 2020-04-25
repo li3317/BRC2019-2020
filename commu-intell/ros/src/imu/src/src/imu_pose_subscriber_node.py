@@ -11,7 +11,7 @@ Status:         In progress
 '''
 
 import rospy
-from IMU.msg import IMU
+from IMU.msg import imuPose
 
 def callback(data):
     rospy.loginfo("linear acceleration in x : %.3f , y : %.3f , z : %.3f \ngyroscope acceleration in x : %.3f , y : %.3f , z : %.3f " 
@@ -21,7 +21,7 @@ def listener():
 
     rospy.init_node('imu_raw_data_subscriber')
 
-    rospy.Subscriber("imu_raw_data", IMU, callback)
+    rospy.Subscriber("imu_raw_data", imuPose, callback)
 
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
