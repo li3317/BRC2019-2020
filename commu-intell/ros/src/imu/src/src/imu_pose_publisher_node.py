@@ -14,18 +14,18 @@ Status:         In progress
 
 import rospy
 from imu import imu_raw_data
-from IMU.msg import IMU
+from IMU.msg import imuPose
 
 
 def imu_publisher():
-	pub = rospy.Publisher('imu_raw_data', IMU, queue_size=10)
+	pub = rospy.Publisher('imu_raw_data', imuPose, queue_size=10)
 	rospy.init_node('imu_raw_data_publisher')
 	rate = rospy.Rate(1) # in hz
 	
 
 	imu = imu_raw_data()
     data = imu.get_all_data()
-    imu_data = IMU()
+    imu_data = imuPose()
     imu_data.surging = data['surging']
     imu_data.heaving = data['heaving']
     imu_data.swaying = data['swaying']
